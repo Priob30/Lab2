@@ -1,0 +1,12 @@
+[Unit]
+Description=Servicio de Monitoreo de Cambios en /home/priscilla/Documentos
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/priscilla/ejercicio3.sh
+WorkingDirectory=/home/priscilla
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
